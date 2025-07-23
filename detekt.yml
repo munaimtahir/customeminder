@@ -1,0 +1,29 @@
+build:
+  maxIssues: 10
+  weights:
+    # complexity: 2
+    # LongParameterList: 1
+    # style: 1
+    # comments: 1
+
+processors:
+  active: true
+  exclude:
+    - 'DetektSuppression.kt'
+
+console-reports:
+  active: true
+  exclude:
+    - 'ProjectStatisticsReport'
+    - 'ComplexityReport'
+    - 'NotificationReport'
+    - 'FindingsReport'
+
+# output-reports:
+#   active: true
+#   exclude:
+#     - 'HtmlReport'
+#     - 'XmlReport'
+#     - 'TxtReport'
+#     - 'SarifReport'
+#     - 'MdReport'
