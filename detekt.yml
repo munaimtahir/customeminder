@@ -6,10 +6,14 @@ build:
     # style: 1
     # comments: 1
 
+config:
+  validation: true
+  #disabledRules: [ 'TooManyFunctions' ]
+
 processors:
   active: true
   exclude:
-    - 'DetektSuppression.kt'
+    - 'DetektProgressListener'
 
 console-reports:
   active: true
@@ -19,11 +23,10 @@ console-reports:
     - 'NotificationReport'
     - 'FindingsReport'
 
-# output-reports:
-#   active: true
-#   exclude:
-#     - 'HtmlReport'
-#     - 'XmlReport'
-#     - 'TxtReport'
-#     - 'SarifReport'
-#     - 'MdReport'
+output-reports:
+  active: true
+  exclude:
+    - 'HtmlReport'
+    - 'XmlReport'
+    - 'TxtReport'
+    - 'SarifReport'
