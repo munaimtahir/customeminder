@@ -1,10 +1,7 @@
 package com.example.remindermatrix
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
-class App : Application() {
-    override fun onCreate() {
-        super.onCreate()
-        // TODO: Add any application-level initialization here
-    }
-}
+@HiltAndroidApp
+class App : Application()
